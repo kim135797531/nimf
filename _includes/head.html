@@ -11,6 +11,10 @@
   <meta name="description" content="{{ page.subtitle }}">
   {% endif %}
 
+  {% if site.favicon %}
+  <link rel="icon" href="{{ site.baseurl }}{{ site.favicon }}" type="image/png" />
+  {% endif %}
+
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
   {% if layout.common-ext-css %}

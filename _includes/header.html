@@ -66,10 +66,25 @@
         </div>
       </div>
     </div>
+
+    {% if site.adsense %}
+    <center>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- responsive ad -->
+    <ins class="adsbygoogle"
+         style="{{ site.adsense.style }}"
+         data-ad-client="{{ site.adsense.client }}"
+         data-ad-slot="{{ site.adsense.slot }}"
+         data-ad-format="{{ site.adsense.format }}"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    </center>
+    {% endif %}
+
   </div>
 </div>
 </header>
-
 
 {% else %}
 <div class="intro-header"></div>
